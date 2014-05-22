@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ike Hecht\r"
+		]
+	},
+	"iframepage": "Iframe Page",
+	"iframepage-desc": "Allows embedding an iframe into a special page",
+	"iframepage-error-wgifsrc": "The $wgifSrc variable must be set in LocalSettings.php!"
+}
