@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Shirayuki"
+		]
+	},
+	"iframepage-desc": "iframe (インラインフレーム) を特別ページに埋め込めるようにする",
+	"iframepage-error-wgifsrc": "<code>LocalSettings.php</code> で変数 <code>$wgifSrc</code> に値を設定してください。"
+}

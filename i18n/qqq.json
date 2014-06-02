@@ -1,10 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ike Hecht\r"
+			"Ike Hecht\r",
+			"Shirayuki"
 		]
 	},
-	"iframepage": "The name of the extension's entry in Special:SpecialPages",
+	"iframepage": "{{doc-special|IframePage}}",
 	"iframepage-desc": "{{desc}}",
 	"iframepage-error-wgifsrc": "Error message to user if the $wgifSrc variable is not set"
 }
