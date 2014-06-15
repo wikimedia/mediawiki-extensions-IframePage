@@ -1,10 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ronel1"
+			"Ronel1",
+			"Amire80"
 		]
 	},
 	"iframepage": "דף Iframe",
 	"iframepage-desc": "מאפשר הטבעת iframe לדף מיוחד",
-	"iframepage-error-wgifsrc": "<code>$wgifSrc</code>המשתנה חייב להיות מוגדר ב- <code>LocalSettings.php</code> ."
+	"iframepage-error-wgifsrc": "המשתנה <code dir=\"ltr\">$wgifSrc</code> חייב להיות מוגדר ב-<code>LocalSettings.php</code>."
 }
