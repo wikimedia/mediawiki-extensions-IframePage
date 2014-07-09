@@ -30,7 +30,6 @@ $wgSpecialPages[ 'IframePage' ] = 'SpecialIframePage';
 
 $wgResourceModules['ext.IframePage'] = array(
 	'styles' => 'IframePage.css',
-	'scripts' => 'IframePage.js',
 	'localBasePath' => __DIR__,
 	'remoteExtPath' => 'IframePage',
 );
