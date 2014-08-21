@@ -1,5 +1,6 @@
 <?php
-# Alert the user that this is not a valid access point to MediaWiki if they try to access the special pages file directly.
+# Alert the user that this is not a valid access point to MediaWiki
+# if they try to access the special pages file directly.
 if ( !defined( 'MEDIAWIKI' ) ) {
 	echo <<<EOT
 To install this extension, put the following line in LocalSettings.php:
@@ -14,7 +15,7 @@ $wgExtensionCredits['specialpage'][] = array(
 	'author' => 'Ike Hecht for [//www.wikiworks.com WikiWorks]',
 	'url' => 'https://www.mediawiki.org/wiki/Extension:IframePage',
 	'descriptionmsg' => 'iframepage-desc',
-	'version' => '0.1',
+	'version' => '0.2',
 );
 
 /**

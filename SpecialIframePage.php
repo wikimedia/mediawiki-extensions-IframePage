@@ -6,8 +6,18 @@ class SpecialIframePage extends SpecialPage {
 		parent::__construct( 'IframePage' );
 	}
 
-	//$srcName is expected to be a key in the $wgifSrc array. It is set by navigating to a subpage of this special page.
-	//If set, it will be used as the Page Title.
+	/**
+	 * Execute the special page
+	 *
+	 * $srcName is expected to be a key in the $wgIframePageSrc array.
+	 * It is set by navigating to a "subpage" of this special page.
+	 * If set, it will also be used as the Page Title.
+	 *
+	 * @global array $wgIframePageSrc
+	 * @global boolean $wgIframePageAllowPath
+	 * @param string|null $srcName A key in the $wgIframePageSrc array
+	 * @throws ErrorPageError
+	 */
 	function execute( $srcName ) {
 		global $wgIframePageSrc, $wgIframePageAllowPath;
 		$request = $this->getRequest();
@@ -35,7 +45,7 @@ class SpecialIframePage extends SpecialPage {
 			$src .= $path;
 		}
 
-		//User can set $wgifSrc without a key. If so, we don't want the page title to be '0'
+		//User can set $wgIframePageSrc without a key. If so, we don't want the page title to be '0'
 		if ( $srcName != '0' ) {
 			//Do users always want this to be the page title?
 			/** @todo This should really be an i18n msg key. But that's not so simple. */
