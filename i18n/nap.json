@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"C.R."
+		]
+	},
+	"iframepage-error-wgifsrc": "'A variabbele <code>$wgIframePageSrc</code> adda sta stabbelita dint'a <code>LocalSettings.php</code>."
+}

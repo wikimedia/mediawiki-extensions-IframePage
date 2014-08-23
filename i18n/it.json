@@ -6,5 +6,5 @@
 	},
 	"iframepage": "Pagina iframe",
 	"iframepage-desc": "Permette di inserire un iframe in una pagina speciale",
-	"iframepage-error-wgifsrc": "La variabile <code>$wgifSrc</code> deve essere impostata in <code>LocalSettings.php</code>."
+	"iframepage-error-wgifsrc": "La variabile <code>$wgIframePageSrc</code> deve essere impostata in <code>LocalSettings.php</code>."
 }

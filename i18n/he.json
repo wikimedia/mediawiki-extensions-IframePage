@@ -7,5 +7,5 @@
 	},
 	"iframepage": "דף Iframe",
 	"iframepage-desc": "מאפשר הטבעת iframe לדף מיוחד",
-	"iframepage-error-wgifsrc": "המשתנה <code dir=\"ltr\">$wgifSrc</code> חייב להיות מוגדר ב-<code>LocalSettings.php</code>."
+	"iframepage-error-wgifsrc": "המשתנה <code dir=\"ltr\">$wgIframePageSrc</code> חייב להיות מוגדר ב-<code>LocalSettings.php</code>."
 }
