@@ -15,7 +15,7 @@ $wgExtensionCredits['specialpage'][] = array(
 	'author' => 'Ike Hecht for [//www.wikiworks.com WikiWorks]',
 	'url' => 'https://www.mediawiki.org/wiki/Extension:IframePage',
 	'descriptionmsg' => 'iframepage-desc',
-	'version' => '0.2',
+	'version' => '0.2.1',
 );
 
 /**

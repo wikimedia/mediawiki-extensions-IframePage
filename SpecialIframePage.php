@@ -1,6 +1,6 @@
 <?php
 
-class SpecialIframePage extends SpecialPage {
+class SpecialIframePage extends IncludableSpecialPage {
 
 	function __construct() {
 		parent::__construct( 'IframePage' );
