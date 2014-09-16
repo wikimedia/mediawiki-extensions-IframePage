@@ -5,6 +5,6 @@
 		]
 	},
 	"iframepage": "Iframe-страница",
-	"iframepage-desc": "Овозможи вматнување на iframe во специјална страница",
+	"iframepage-desc": "Овозможи вматнување на iframe во службена страница",
 	"iframepage-error-wgifsrc": "Променливата <code>$wgIframePageSrc</code> мора да биде зададена во <code>LocalSettings.php</code>."
 }

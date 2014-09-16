@@ -1,9 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Raynasution"
+			"Raynasution",
+			"Bennylin"
 		]
 	},
-	"iframepage": "Halaman Iframe",
-	"iframepage-desc": "Bolehkan memasukkan iframe ke dalam halaman spesial"
+	"iframepage": "Halaman iframe",
+	"iframepage-desc": "Bolehkan memasukkan iframe ke dalam halaman istimewa"
 }
