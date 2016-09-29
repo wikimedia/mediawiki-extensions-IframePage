@@ -4,5 +4,6 @@
 			"Red Winged Duck"
 		]
 	},
-	"iframepage": "Iframe-старонка"
+	"iframepage": "Iframe-старонка",
+	"iframepage-desc": "Дазваляе ўбудоўваць iframe ў спэцыяльную старонку"
 }
