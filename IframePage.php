@@ -37,7 +37,6 @@ $wgIframePageSrc = array();
 $wgIframePageAllowPath = false;
 
 $wgAutoloadClasses['SpecialIframePage'] = __DIR__ . '/SpecialIframePage.php';
-$wgExtensionMessagesFiles['IframePage'] = __DIR__ . '/IframePage.i18n.php';
 $wgExtensionMessagesFiles['IframePageAlias'] = __DIR__ . '/IframePage.alias.php';
 $wgMessagesDirs['IframePage'] = __DIR__ . '/i18n';
 $wgSpecialPages['IframePage'] = 'SpecialIframePage';
