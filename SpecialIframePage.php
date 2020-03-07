@@ -65,6 +65,9 @@ class SpecialIframePage extends IncludableSpecialPage {
 		$output->addHTML( $html );
 	}
 
+	/**
+	 * @return string
+	 */
 	protected function getGroupName() {
 		return 'other';
 	}
