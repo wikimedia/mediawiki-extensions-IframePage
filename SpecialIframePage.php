@@ -36,7 +36,7 @@ class SpecialIframePage extends IncludableSpecialPage {
 		if ( isset( $wgIframePageSrc[$srcName] ) ) {
 			$src = $wgIframePageSrc[$srcName];
 		} else {
-			//Default to first key/value pair of array
+			// Default to first key/value pair of array
 			$srcName = key( $wgIframePageSrc );
 			$src = reset( $wgIframePageSrc );
 		}
@@ -45,22 +45,21 @@ class SpecialIframePage extends IncludableSpecialPage {
 			$src .= $path;
 		}
 
-		//User can set $wgIframePageSrc without a key. If so, we don't want the page title to be '0'
+		// User can set $wgIframePageSrc without a key. If so, we don't want the page title to be '0'
 		if ( $srcName != '0' ) {
-			//Do users always want this to be the page title?
+			// Do users always want this to be the page title?
 			/** @todo This should really be an i18n msg key. But that's not so simple. */
 			$output->setPageTitle( $srcName );
 		}
 
-		$html = Html::openElement( 'div', array( 'id' => 'iframeframe' ) );
-		$html .= Html::element( 'iframe',
-				array( 'id' => "iframe-$srcName",
-				'src' => $src,
-				'frameborder' => '0',
-				'width' => '100%',
-				'height' => '100%'
-				)
-		);
+		$html = Html::openElement( 'div', [ 'id' => 'iframeframe' ] );
+		$html .= Html::element( 'iframe', [
+			'id' => "iframe-$srcName",
+			'src' => $src,
+			'frameborder' => '0',
+			'width' => '100%',
+			'height' => '100%',
+		] );
 		$html .= Html::closeElement( 'div' );
 
 		$output->addHTML( $html );

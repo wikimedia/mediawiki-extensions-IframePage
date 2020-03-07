@@ -6,11 +6,11 @@
  * @ingroup Extensions
  */
 
-$specialPageAliases = array();
+$specialPageAliases = [];
 
 /** English
  * @author Ike Hecht
  */
-$specialPageAliases[ 'en' ] = array(
-	'IframePage' => array( 'IframePage', 'Iframe Page' ),
-);
+$specialPageAliases[ 'en' ] = [
+	'IframePage' => [ 'IframePage', 'Iframe Page' ],
+];
