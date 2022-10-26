@@ -27,7 +27,7 @@ class SpecialIframePage extends IncludableSpecialPage {
 
 		$path = $request->getVal( 'path' );
 
-		if ( !isset( $wgIframePageSrc ) ) {
+		if ( !$wgIframePageSrc ) {
 			throw new ErrorPageError( 'errorpagetitle', 'iframepage-error-wgifsrc' );
 		}
 
