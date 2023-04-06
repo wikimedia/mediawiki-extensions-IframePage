@@ -1,10 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Gomoko"
+			"Gomoko",
+			"Verdy p"
 		]
 	},
-	"iframepage": "Page iframe",
-	"iframepage-desc": "Permet d’inclure une iframe dans une page spéciale",
+	"iframepage": "Page intégrée en « iframe »",
+	"iframepage-desc": "Permet d’intégrer une « iframe » dans une page spéciale",
 	"iframepage-error-wgifsrc": "La variable <code>$wgIframePageSrc</code> doit être activée dans <code>LocalSettings.php</code>."
 }
