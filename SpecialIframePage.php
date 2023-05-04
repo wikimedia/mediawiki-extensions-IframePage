@@ -19,29 +19,35 @@ class SpecialIframePage extends IncludableSpecialPage {
 	 * @throws ErrorPageError
 	 */
 	function execute( $srcName ) {
-		global $wgIframePageSrc, $wgIframePageAllowPath;
 		$request = $this->getRequest();
 		$output = $this->getOutput();
 		$output->addModules( 'ext.IframePage' );
 		$this->setHeaders();
 
 		$path = $request->getVal( 'path' );
+		$pageSrc = $this->getConfig()->get( 'IframePageSrc' );
+		$allowPath = $this->getConfig()->get( 'IframePageAllowPath' );
 
-		if ( !$wgIframePageSrc ) {
-			throw new ErrorPageError( 'errorpagetitle', 'iframepage-error-wgifsrc' );
+		if ( !$pageSrc ) {
+			if ( $this->including() ) {
+				$this->getOutput()->addWikiMsg( 'iframepage-error-wgifsrc' );
+				return;
+			} else {
+				throw new ErrorPageError( 'errorpagetitle', 'iframepage-error-wgifsrc' );
+			}
 		}
 
 		$srcName = $name = str_replace( '_', ' ', urldecode( $srcName ) );
 
-		if ( isset( $wgIframePageSrc[$srcName] ) ) {
-			$src = $wgIframePageSrc[$srcName];
+		if ( isset( $pageSrc[$srcName] ) ) {
+			$src = $pageSrc[$srcName];
 		} else {
 			// Default to first key/value pair of array
-			$srcName = key( $wgIframePageSrc );
-			$src = reset( $wgIframePageSrc );
+			$srcName = key( $pageSrc );
+			$src = reset( $pageSrc );
 		}
 
-		if ( $wgIframePageAllowPath && isset( $path ) ) {
+		if ( $allowPath && isset( $path ) ) {
 			$src .= $path;
 		}
 
@@ -70,5 +76,14 @@ class SpecialIframePage extends IncludableSpecialPage {
 	 */
 	protected function getGroupName() {
 		return 'other';
+	}
+
+	/**
+	 * No need to disable cache when transcluding
+	 *
+	 * @return int|bool False to not affect cacheability
+	 */
+	public function maxIncludeCacheTime() {
+		return false;
 	}
 }
