@@ -6,7 +6,7 @@
 	"descriptionmsg": "iframepage-desc",
 	"type": "specialpage",
 	"requires": {
-		"MediaWiki": ">= 1.29.0"
+		"MediaWiki": ">= 1.40.0"
 	},
 	"SpecialPages": {
 		"IframePage": "SpecialIframePage"

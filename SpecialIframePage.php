@@ -1,5 +1,7 @@
 <?php
 
+use MediaWiki\Html\Html;
+
 class SpecialIframePage extends IncludableSpecialPage {
 
 	function __construct() {
