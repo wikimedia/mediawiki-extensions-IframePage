@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"شاه زمان پټان"
+		]
+	},
+	"iframepage-error-wgifsrc": "د <code>$wgIframePageSrc</code> اوښتون بايد په <code>LocalSettings.php</code> کې وټاکل شي."
+}
