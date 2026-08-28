@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Wizzard"
+		]
+	},
+	"iframepage": "Stránka s iframe",
+	"iframepage-desc": "Umožňuje vložiť iframe do špeciálnej stránky",
+	"iframepage-error-wgifsrc": "Premenná <code>$wgIframePageSrc</code> musí byť nastavená v súbore <code>LocalSettings.php</code>."
+}
