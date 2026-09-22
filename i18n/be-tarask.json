@@ -1,10 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Red Winged Duck"
+			"Red Winged Duck",
+			"Ucukor"
 		]
 	},
 	"iframepage": "Iframe-старонка",
-	"iframepage-desc": "Дазваляе ўбудоўваць iframe ў спэцыяльную старонку",
+	"iframepage-desc": "Дазваляе ўкладаць iframe ў спэцыяльную старонку",
 	"iframepage-error-wgifsrc": "Зьменная <code>$wgIframePageSrc</code> мусіць быць вызначаная ў <code>LocalSettings.php</code>."
 }
